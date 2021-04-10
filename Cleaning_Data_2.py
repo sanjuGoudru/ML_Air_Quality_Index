@@ -47,6 +47,7 @@ if __name__ == '__main__':
     for year in [2013,2014,2015,2016,2017,2018]:
         average = avg_data_per_year(year)
         avg_lst.append(average)
+        print('{} {}'.format(year,len(average)))
         plot_data(average,year)
     
     plt.xlabel('Day')
